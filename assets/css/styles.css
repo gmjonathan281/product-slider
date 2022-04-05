@@ -1,0 +1,454 @@
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/../font/SofiaPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-UltraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../font/SofiaPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+.preload {
+  overflow: hidden; }
+  .preload .preloader {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .preload .preloader .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: #004489;
+      position: absolute;
+      left: 30%;
+      animation: easeInAndOut 2.5s ease infinite; }
+      .preload .preloader .dot:nth-child(1) {
+        animation-delay: 0s;
+        opacity: 0; }
+      .preload .preloader .dot:nth-child(2) {
+        animation-delay: 0.3s;
+        opacity: 0.8; }
+      .preload .preloader .dot:nth-child(3) {
+        animation-delay: 0.6s;
+        opacity: 0.5; }
+      .preload .preloader .dot:nth-child(4) {
+        animation-delay: 0.9s;
+        opacity: 0.2; }
+
+@keyframes easeInAndOut {
+  0% {
+    left: 30%;
+    opacity: 0; }
+  48% {
+    left: 49%;
+    opacity: 1; }
+  50% {
+    left: 51%;
+    opacity: 1; }
+  100% {
+    left: 70%;
+    opacity: 0; } }
+
+.color-pink {
+  color: #FF5A8D; }
+
+.color-black {
+  color: #000; }
+
+.color-gray {
+  color: #151515; }
+
+.section-feature-product {
+  overflow: hidden;
+  overflow: hidden; }
+  .section-feature-product .rating {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px; }
+  .section-feature-product .product-name {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 10px; }
+  .section-feature-product .star svg {
+    transform: translateY(4px); }
+  .section-feature-product .review-count {
+    padding-left: 8px; }
+  .section-feature-product .price {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 9px;
+    margin-bottom: 10px; }
+  .section-feature-product .product-info {
+    padding: 6px; }
+  .section-feature-product .carousel {
+    position: relative;
+    padding: 20px 0; }
+  .section-feature-product .carousel-inner {
+    overflow: visible; }
+  .section-feature-product .old-price {
+    text-decoration: line-through; }
+  .section-feature-product .feature-products-list .image {
+    position: relative;
+    height: 0;
+    padding-bottom: 100%; }
+  .section-feature-product .button {
+    color: #FFF;
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 13px 0;
+    width: 76%;
+    background-color: #FF5A8D;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    margin: auto; }
+    .section-feature-product .button:hover {
+      color: #FF5A8D;
+      background-color: #FFF;
+      border-color: #FF5A8D;
+      text-decoration: none;
+      cursor: pointer; }
+    .section-feature-product .button.second-button {
+      width: unset;
+      padding: 13px 54px;
+      background-color: #FFF;
+      color: #FF5A8D;
+      border-color: #FF5A8D;
+      margin-top: 14px; }
+  .section-feature-product .special-price {
+    margin-left: 5px; }
+  .section-feature-product .button.second-button:hover {
+    background-color: #FF5A8D;
+    color: #fff; }
+  .section-feature-product .image img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .section-feature-product .carousel-control-prev-icon, .section-feature-product .carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+    background-color: #FFF2F4;
+    background-position: center;
+    background-size: unset; }
+  .section-feature-product .carousel-control-next, .section-feature-product .carousel-control-prev {
+    width: 40px;
+    height: 40px;
+    top: 31%;
+    transform: translateY(-50%); }
+  .section-feature-product .carousel-control-prev-icon {
+    background-image: url("../images/prev.svg");
+    margin-left: 0; }
+  .section-feature-product .carousel-control-next-icon {
+    background-image: url("../images/next.svg");
+    margin-right: 0; }
+
+#carousel-example {
+  overflow: hidden; }
+
+.section-feature-product .carousel-inner.more-width {
+  margin-left: -68% !important;
+  width: 236%; }
+
+.section-feature-product .carousel-item {
+  margin-right: 0; }
+
+.section-feature-product .carousel-inner .active + .carousel-item {
+  display: block; }
+
+.section-feature-product .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) {
+  transition: none; }
+  .section-feature-product .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+    transition: none; }
+
+.section-feature-product .carousel-inner .carousel-item-next {
+  position: relative;
+  transform: translate3d(0, 0, 0); }
+
+.section-feature-product .active.carousel-item-left + .carousel-item-next.carousel-item-left {
+  position: relative;
+  transform: translate3d(-100%, 0, 0);
+  visibility: visible; }
+
+.section-feature-product .carousel-item-next.carousel-item-left + .carousel-item {
+  position: relative;
+  transform: translate3d(-100%, 0, 0);
+  visibility: visible; }
+  .section-feature-product .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+
+.section-feature-product .carousel-inner .carousel-item-prev.carousel-item-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  visibility: visible; }
+
+.section-feature-product .active.carousel-item-right + .carousel-item-prev.carousel-item-right {
+  position: relative;
+  transform: translate3d(100%, 0, 0);
+  visibility: visible;
+  display: block;
+  visibility: visible; }
+
+.section-feature-product .carousel-item-prev.carousel-item-right + .carousel-item {
+  position: relative;
+  transform: translate3d(100%, 0, 0);
+  visibility: visible;
+  display: block;
+  visibility: visible; }
+  .section-feature-product .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible; }
+
+.section-feature-product .carousel-inner .active + .carousel-item + .carousel-item {
+  display: block; }
+
+.section-feature-product .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+  transition: none; }
+
+.section-feature-product .carousel-inner .carousel-item-next {
+  position: relative;
+  transform: translate3d(0, 0, 0); }
+
+.section-feature-product .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+  position: relative;
+  transform: translate3d(-100%, 0, 0);
+  visibility: visible; }
+
+.section-feature-product .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+  position: relative;
+  transform: translate3d(100%, 0, 0);
+  visibility: visible;
+  display: block;
+  visibility: visible; }
+
+@media (max-width: 991px) {
+  .section-feature-product .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible; } }
+
+@media (max-width: 768px) {
+  .section-feature-product .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    z-index: -1;
+    display: block;
+    visibility: visible; } }
+
+@media (max-width: 767.98px) {
+  .section-feature-product .product-name {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 20px; }
+  .section-feature-product .top-content .container-fluid {
+    padding: 0; }
+  .section-feature-product .price {
+    font-size: 16px;
+    line-height: 20px; }
+  .section-feature-product .carousel-inner, .section-feature-product .container-fluid {
+    overflow: visible; }
+  .section-feature-product .carousel {
+    position: relative; }
+  .section-feature-product .button {
+    width: 80%; }
+    .section-feature-product .button.second-button {
+      width: unset;
+      padding: 13px 54px;
+      background-color: #FFF;
+      color: #FF5A8D;
+      border-color: #FF5A8D;
+      margin-top: 5px; }
+  .section-feature-product .carousel-control-next {
+    top: 30%; }
+  .section-feature-product .carousel-control-prev {
+    top: 30%;
+    left: 17px; }
+  .section-feature-product .carousel-control-next {
+    right: 14px; }
+  .section-feature-product .carousel-item {
+    padding: 0 7.5px; } }
+
+@media (min-width: 768px) {
+  .section-feature-product .carousel-inner.more-width {
+    margin-left: -37% !important;
+    width: 131%; } }
+
+@media (min-width: 991px) {
+  .section-feature-product .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+    display: block; }
+  .section-feature-product .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    transition: none; }
+  .section-feature-product .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    z-index: -1;
+    display: block;
+    visibility: visible; }
+  .section-feature-product .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  .section-feature-product .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible; }
+  .section-feature-product .carousel-inner.more-width {
+    margin-left: -15% !important;
+    width: 130%; }
+  .section-feature-product .col-lg-2_4 {
+    flex: 0 0 20%;
+    max-width: 20%; }
+  .section-feature-product .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    display: block; }
+  .section-feature-product .carousel-inner .active.col-lg-2_4.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -20%;
+    z-index: -1;
+    display: block;
+    visibility: visible; }
+  .section-feature-product .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  .section-feature-product .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    transition: none; }
+  .section-feature-product .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible; }
+  .section-feature-product .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    transition: none; } }
