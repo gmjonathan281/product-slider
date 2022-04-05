@@ -1,3 +1,6 @@
+/*
+ *  code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+ *  code customized by Azmind.com
 @font-face
   font-family: 'Sofia Pro'
   src: url('../font/../font/SofiaPro-Bold.ttf') format("truetype")
@@ -110,61 +113,154 @@
   font-style: normal
   font-display: swap
 
-.preload
-  overflow: hidden
+body
+  margin: 0
+  font-family: Sofia Pro,Helvetica Neue,Arial,sans-serif
+  font-size: 1em
+  font-weight: 400
+  line-height: 1.25
+  color: #151515
+  text-align: left
+  background-color: #fff
 
-  .preloader
-    width: 100%
-    height: 100vh
-    background-color: #fff
-    display: flex
-    justify-content: center
-    align-items: center
+a:hover
+  color: #121416
+  text-decoration: none
 
-    .dot
-      width: 10px
-      height: 10px
-      border-radius: 100%
-      background-color: #004489
-      position: absolute
-      left: 30%
-      animation: easeInAndOut 2.5s ease infinite
+button.btn-primary
+  color: #fff
+  background-color: #f4436c
+  border-color: #f4436c
 
-      &:nth-child(1)
-        animation-delay: 0s
-        opacity: 0
+.btn-primary:hover
+  color: #fff
+  background-color: #f21f50
+  border-color: #f11346
 
-      &:nth-child(2)
-        animation-delay: 0.3s
-        opacity: 0.8
+.btn
+  display: inline-block
+  font-weight: 700
+  color: #151515
+  text-align: center
+  vertical-align: middle
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  background-color: transparent
+  border: 1px solid transparent
+  padding: 0.5625em 1.75em
+  font-size: 1em
+  line-height: 1.25
+  border-radius: 0.25rem
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 
-      &:nth-child(3)
-        animation-delay: 0.6s
-        opacity: 0.5
+.btn-primary
+  &:focus, &.focus
+    color: #fff
+    background-color: #f21f50
+    border-color: #f11346
+    box-shadow: 0 0 0 0.2rem rgba(246, 95, 130, 0.5)
 
-      &:nth-child(4)
-        animation-delay: 0.9s
-        opacity: 0.2
+  &.disabled, &:disabled
+    color: #fff
+    background-color: #f4436c
+    border-color: #f4436c
 
-@keyframes easeInAndOut
-  0%
-    left: 30%
-    opacity: 0
+  &:not(:disabled):not(.disabled)
+    &:active, &.active
+      color: #fff
+      background-color: #f11346
+      border-color: #ea0e41
 
-  48%
-    left: 49%
-    opacity: 1
+.show > .btn-primary.dropdown-toggle
+  color: #fff
+  background-color: #f11346
+  border-color: #ea0e41
 
-  50%
-    left: 51%
-    opacity: 1
+.btn-primary:not(:disabled):not(.disabled)
+  &:active:focus, &.active:focus
+    box-shadow: 0 0 0 0.2rem rgba(246, 95, 130, 0.5)
 
-  100%
-    left: 70%
-    opacity: 0
+.show > .btn-primary.dropdown-toggle:focus
+  box-shadow: 0 0 0 0.2rem rgba(246, 95, 130, 0.5)
+
+.btn-outline-primary
+  color: #f4436c
+  border-color: #f4436c
+
+  &:hover
+    color: #fff
+    background-color: #f4436c
+    border-color: #f4436c
+
+.btn-lg
+  padding: 0.8125em 3.375em
+  font-size: 1em
+  line-height: 1.25
+  border-radius: 0.5rem
+  border-width: 2px
+
+.btn-outline-primary
+  &:focus, &.focus
+    box-shadow: 0 0 0 0.2rem rgba(244, 67, 108, 0.5)
+
+  &.disabled, &:disabled
+    color: #f4436c
+    background-color: transparent
+
+  &:not(:disabled):not(.disabled)
+    &:active, &.active
+      color: #fff
+      background-color: #f4436c
+      border-color: #f4436c
+
+.show > .btn-outline-primary.dropdown-toggle
+  color: #fff
+  background-color: #f4436c
+  border-color: #f4436c
+
+.btn-outline-primary:not(:disabled):not(.disabled)
+  &:active:focus, &.active:focus
+    box-shadow: 0 0 0 0.2rem rgba(244, 67, 108, 0.5)
+
+.show > .btn-outline-primary.dropdown-toggle:focus
+  box-shadow: 0 0 0 0.2rem rgba(244, 67, 108, 0.5)
+
+.row
+  display: flex
+  flex-wrap: wrap
+  margin-right: -7.5px
+  margin-left: -7.5px
+
+.no-gutters
+  margin-right: 0
+  margin-left: 0
+
+  >
+    .col, [class*="col-"]
+      padding-right: 0
+      padding-left: 0
+
+.text-primary
+  color: #f4436c !important
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto
+  position: relative
+  width: 100%
+  padding-right: 7.5px
+  padding-left: 7.5px
+
+.text-linethrough
+  text-decoration: line-through
+
+@media (min-width: 992px)
+  h4, .h4
+    font-size: 20px
+    font-weight: 400
 
 .color-pink
-  color: #FF5A8D
+  color: #f4436c
 
 .color-black
   color: #000
@@ -172,8 +268,33 @@
 .color-gray
   color: #151515
 
-.section-feature-product
+.container-fluid
   overflow: hidden
+
+.label.new
+  position: absolute
+  pointer-events: none
+  z-index: 2
+  top: -7px
+  right: 15px
+  background: #f4436c
+  border-radius: 50%
+  width: 80px
+  height: 80px
+  display: flex
+  justify-content: center
+  color: #fff
+  font-size: 28px
+  font-weight: 700
+  padding: 20px 0
+
+.section-feature-product
+  .add-to-cart
+    font-weight: 500
+    max-width: 186px
+
+  .item-inner
+    padding-right: 14px
 
   .rating
     font-family: 'Sofia Pro'
@@ -181,11 +302,18 @@
     font-weight: 400
     font-size: 14px
     line-height: 16px
+    letter-spacing: -0.3px
+
+  .product-card__title
+    letter-spacing: -0.6px
+
+  .price .regular-price
+    letter-spacing: -1px
 
   .product-name
     font-family: 'Sofia Pro'
     font-style: normal
-    font-weight: 700
+    font-weight: 500
     font-size: 20px
     line-height: 25px
     margin-top: 10px
@@ -194,26 +322,18 @@
     transform: translateY(4px)
 
   .review-count
-    padding-left: 8px
+    padding-left: 7px
+    text-decoration: underline
 
-  .price
-    font-family: 'Sofia Pro'
-    font-style: normal
-    font-weight: 400
-    font-size: 20px
-    line-height: 25px
-    margin-top: 9px
-    margin-bottom: 10px
+  .shop-now
+    padding: 10px 48px 14px
 
   .product-info
     padding: 6px
 
   .carousel
     position: relative
-    padding: 20px 0
-
-  .carousel-inner
-    overflow: visible
+    padding: 0 0 25px
 
   .old-price
     text-decoration: line-through
@@ -267,19 +387,33 @@
     object-fit: cover
 
   .carousel-control-prev-icon, .carousel-control-next-icon
-    height: 40px
-    width: 40px
-    background-color: #FFF2F4
+    height: 38px
+    width: 38px
+    background-color: #fff2f4
     background-position: center
     background-size: unset
+    opacity: 1
 
-  overflow: hidden
+  margin-top: 10px
+  position: relative
 
-  .carousel-control-next, .carousel-control-prev
-    width: 40px
-    height: 40px
-    top: 31%
+  .carousel-control-next
+    width: 38px
+    height: 38px
+    top: 26.5%
     transform: translateY(-50%)
+    opacity: 1
+
+  .carousel-control-prev
+    width: 38px
+    height: 38px
+    top: 26.5%
+    transform: translateY(-50%)
+    opacity: 1
+    left: -5px
+
+  .carousel-control-next
+    right: -5px
 
   .carousel-control-prev-icon
     background-image: url('../images/prev.svg')
@@ -289,31 +423,83 @@
     background-image: url('../images/next.svg')
     margin-right: 0
 
-#carousel-example
-  overflow: hidden
+@media (max-width: 767.98px)
+  .section-feature-product
+    overflow: hidden
+    max-width: 100%
 
-.section-feature-product
-  .carousel-inner.more-width
-    margin-left: -68% !important
-    width: 236%
+    .product-name
+      font-size: 16px
+      line-height: 20px
+      padding: 0 20px
 
-  .carousel-item
-    margin-right: 0
+    .top-content .container-fluid
+      padding: 0
 
-  .carousel-inner
-    .active + .carousel-item
-      display: block
+    .product-info
+      padding: 8px
 
-    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
-      transition: none
+    .product-card__title
+      letter-spacing: -0.34728px
+      font-size: 17px
 
-      + .carousel-item
-        transition: none
+    .price
+      margin-top: 6px
+      margin-bottom: 2px
 
-    .carousel-item-next
+      .sale-price, .regular-price
+        letter-spacing: -0.6px
+        font-size: 17px
+
+    .add-to-cart
+      max-width: 195px
+
+    .shop-now
+      padding: 10px 53px 14px
+
+    .rating
+      letter-spacing: 0
+
+    .item-inner
+      padding-right: 0
+
+    .carousel--centered, .carousel--loop
+      overflow: visible
+
+    .carousel-inner
+      overflow: visible
+
+      /* width: calc(100% + 197px);
+
+    .container-fluid
+      overflow: visible
+
+    .carousel
       position: relative
-      transform: translate3d(0, 0, 0)
+      padding: 0 0 16px
 
+    .button
+      width: 80%
+
+      &.second-button
+        width: unset
+        padding: 13px 54px
+        background-color: #FFF
+        color: #FF5A8D
+        border-color: #FF5A8D
+        margin-top: 5px
+
+    .carousel-control-next
+      top: 25%
+
+    .carousel-control-prev
+      top: 25%
+      left: 35px
+
+    .carousel-control-next
+      right: 30px
+
+.carousel--loop
   .active.carousel-item-left + .carousel-item-next.carousel-item-left
     position: relative
     transform: translate3d(-100%, 0, 0)
@@ -329,7 +515,151 @@
       transform: translate3d(-100%, 0, 0)
       visibility: visible
 
-  .carousel-inner .carousel-item-prev.carousel-item-right
+      + .carousel-item
+        position: relative
+        transform: translate3d(-100%, 0, 0)
+        visibility: visible
+
+        + .carousel-item
+          position: relative
+          transform: translate3d(-100%, 0, 0)
+          visibility: visible
+
+          + .carousel-item
+            position: relative
+            transform: translate3d(-100%, 0, 0)
+            visibility: visible
+
+            + .carousel-item
+              position: relative
+              transform: translate3d(-100%, 0, 0)
+              visibility: visible
+
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right
+    position: relative
+    transform: translate3d(100%, 0, 0)
+    visibility: visible
+    display: block
+
+  .carousel-item-prev.carousel-item-right + .carousel-item
+    position: relative
+    transform: translate3d(100%, 0, 0)
+    visibility: visible
+    display: block
+
+    + .carousel-item
+      position: relative
+      transform: translate3d(100%, 0, 0)
+      visibility: visible
+      display: block
+
+      + .carousel-item
+        position: relative
+        transform: translate3d(100%, 0, 0)
+        visibility: visible
+        display: block
+
+        + .carousel-item
+          position: relative
+          transform: translate3d(100%, 0, 0)
+          visibility: visible
+          display: block
+
+          + .carousel-item
+            position: relative
+            transform: translate3d(100%, 0, 0)
+            visibility: visible
+            display: block
+
+            + .carousel-item
+              position: relative
+              transform: translate3d(100%, 0, 0)
+              visibility: visible
+              display: block
+
+.carousel--fixed-height
+  overflow: hidden
+  height: 11.875em
+
+  .carousel-inner, .carousel-item, figure
+    height: 100%
+
+  img
+    height: 100%
+    -o-object-fit: cover
+    object-fit: cover
+
+@media (min-width: 992px)
+  .carousel--fixed-height
+    height: 25em
+
+@media (max-width: 767.98px)
+  .carousel--sidebar
+    min-height: 16em
+
+@media (min-width: 992px)
+  .carousel--sidebar .carousel-item
+    display: block
+    float: none
+
+.carousel--loop
+  .carousel-item
+    margin-right: 0
+
+  .carousel-item-next
+    position: relative
+    transform: translate3d(0, 0, 0)
+
+  .carousel-item-prev
+    position: relative
+    transform: translate3d(0, 0, 0)
+
+    &:not(.carousel-item-right)
+      transform: translateX(-100%)
+
+  .carousel-item.active
+    display: block
+
+    + .carousel-item
+      display: block
+
+      + .carousel-item
+        display: block
+
+        + .carousel-item
+          display: block
+
+          + .carousel-item
+            display: block
+
+            + .carousel-item
+              display: block
+
+              + .carousel-item
+                display: block
+
+    &:not(.carousel-item-right):not(.carousel-item-left)
+      transition: none
+
+      + .carousel-item:not(.carousel-item--last)
+        transition: none
+
+        + .carousel-item:not(.carousel-item--last)
+          transition: none
+
+          + .carousel-item:not(.carousel-item--last)
+            transition: none
+
+            + .carousel-item:not(.carousel-item--last)
+              transition: none
+
+              + .carousel-item:not(.carousel-item--last)
+                transition: none
+
+                + .carousel-item:not(.carousel-item--last)
+                  transition: none
+
+  .carousel-item-prev.carousel-item-right
     position: absolute
     top: 0
     left: 0
@@ -337,180 +667,182 @@
     display: block
     visibility: visible
 
-  .active.carousel-item-right + .carousel-item-prev.carousel-item-right
-    position: relative
-    transform: translate3d(100%, 0, 0)
-    visibility: visible
-    display: block
-    visibility: visible
-
-  .carousel-item-prev.carousel-item-right + .carousel-item
-    position: relative
-    transform: translate3d(100%, 0, 0)
-    visibility: visible
-    display: block
-    visibility: visible
-
-    + .carousel-item
-      position: relative
-      transform: translate3d(100%, 0, 0)
-      visibility: visible
-      display: block
-      visibility: visible
-
-  .carousel-inner
-    .active + .carousel-item + .carousel-item
-      display: block
-
-    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item
-      transition: none
-
-    .carousel-item-next
-      position: relative
-      transform: translate3d(0, 0, 0)
-
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item
-    position: relative
-    transform: translate3d(-100%, 0, 0)
-    visibility: visible
-
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item
-    position: relative
-    transform: translate3d(100%, 0, 0)
-    visibility: visible
-    display: block
-    visibility: visible
-
-@media (max-width: 991px)
-  .section-feature-product .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item
-    position: absolute
-    top: 0
-    right: -33.3333%
-    z-index: -1
-    display: block
-    visibility: visible
-
-@media (max-width: 768px)
-  .section-feature-product .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item
-    position: absolute
-    top: 0
-    right: -50%
-    z-index: -1
-    display: block
-    visibility: visible
+@media (min-width: 992px)
+  .carousel--loop[data-slide-number="5"] .carousel-item
+    flex: 0 0 20%
+    max-width: 20%
 
 @media (max-width: 767.98px)
-  .section-feature-product
-    .product-name
-      font-size: 16px
-      line-height: 20px
-      padding: 0 20px
+  .carousel--loop
+    overflow-x: hidden
 
-    .top-content .container-fluid
-      padding: 0
+.carousel--centered
+  overflow: hidden
 
-    .price
-      font-size: 16px
-      line-height: 20px
-
-    .carousel-inner, .container-fluid
-      overflow: visible
-
-    .carousel
-      position: relative
-
-    .button
-      width: 80%
-
-      &.second-button
-        width: unset
-        padding: 13px 54px
-        background-color: #FFF
-        color: #FF5A8D
-        border-color: #FF5A8D
-        margin-top: 5px
-
-    .carousel-control-next
-      top: 30%
-
-    .carousel-control-prev
-      top: 30%
-      left: 17px
-
-    .carousel-control-next
-      right: 14px
-
-    .carousel-item
-      padding: 0 7.5px
+  .carousel-inner
+    width: calc(100% + 15px)
+    overflow: visible
+    transform: translateX(-62.5%)
 
 @media (min-width: 768px)
-  .section-feature-product .carousel-inner.more-width
-    margin-left: -37% !important
-    width: 131%
+  .carousel--centered .carousel-inner
+    width: calc(100% + 30px)
+    transform: translateX(-12.5%)
 
-@media (min-width: 991px)
-  .section-feature-product
-    .carousel-inner
-      .active + .carousel-item + .carousel-item + .carousel-item
-        display: block
-
-      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item
-        transition: none
-
-      .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-        position: absolute
-        top: 0
-        right: -25%
-        z-index: -1
-        display: block
-        visibility: visible
-
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-      position: relative
-      transform: translate3d(-100%, 0, 0)
-      visibility: visible
-
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-      position: relative
-      transform: translate3d(100%, 0, 0)
-      visibility: visible
+    .active + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item
       display: block
-      visibility: visible
 
-    .carousel-inner.more-width
-      margin-left: -15% !important
-      width: 130%
-
-    .col-lg-2_4
-      flex: 0 0 20%
-      max-width: 20%
-
-    .carousel-inner .active
-      + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-        display: block
-
-      &.col-lg-2_4.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-        position: absolute
-        top: 0
-        right: -20%
-        z-index: -1
-        display: block
-        visibility: visible
-
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-      position: relative
-      transform: translate3d(-100%, 0, 0)
-      visibility: visible
-
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-      transition: none
-
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-      position: relative
+    .carousel-item--last
       transform: translate3d(100%, 0, 0)
-      visibility: visible
-      display: block
-      visibility: visible
 
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-      transition: none
+[data-slide-number="3"] .carousel--centered .carousel-inner
+  transform: translateX(-60.6%)
+
+@media (min-width: 992px)
+  [data-slide-number="3"] .carousel--centered .carousel-inner
+    transform: translateX(-10.5%)
+
+@media (max-width: 767.98px)
+  .carousel--centered-mobile
+    overflow: hidden
+
+@media (max-width: 767.98px)
+  .carousel--centered-mobile .carousel-inner
+    overflow: visible
+    transform: translateX(-60.5%)
+
+.carousel--preview
+  overflow: hidden
+
+  .carousel-indicators
+    margin-right: 12.5%
+    margin-left: 12.5%
+
+  .carousel-control-prev, .carousel-control-next
+    background: rgba(255, 255, 255, 0.3)
+    width: 12.5%
+    z-index: 11
+
+  .carousel-inner
+    width: 225%
+    left: -62.5%
+
+  .carousel-item-next:not(.carousel-item-left), .carousel-item-right.active
+    transform: translate3d(33%, 0, 0)
+
+  .carousel-item-prev:not(.carousel-item-right), .carousel-item-left.active
+    transform: translate3d(-33%, 0, 0)
+
+  .item__third
+    display: block
+    float: left
+    position: relative
+    min-height: 1px
+    width: 33.33333333%
+
+.carousel--scroll
+  .carousel-item
+    display: block
+    margin-right: 0
+
+  .carousel-inner
+    overflow: auto hidden
+    -ms-overflow-style: none
+    scrollbar-width: none
+
+    &::-webkit-scrollbar
+      display: none
+
+  .scrollbar
+    position: relative
+    background: #faf9f9
+    height: 4px
+    border-radius: 2px
+
+  .scrollbar--thumb
+    height: 4px
+    border-radius: 2px
+    position: absolute
+    left: 0
+    background: #d0d0d0
+
+  .carousel-control-prev, .carousel-control-next
+    top: 50%
+    bottom: auto
+    width: auto
+    transform: translateY(-50%)
+
+.carousel-indicators--primary li
+  background-color: #f4436c
+
+.carousel-indicators--black .active
+  background-color: #151515
+
+.carousel-indicators--right
+  justify-content: flex-end
+
+  li:not(.active)
+    background: transparent
+    opacity: 1
+
+.carousel-control--background
+  .carousel-control-prev-icon, .carousel-control-next-icon
+    background-color: #fff
+    width: 2.5em
+    height: 2.5em
+    position: absolute
+    z-index: -1
+
+@media (min-width: 992px)
+  .carousel-control--right-lg
+    width: 2.5em
+    height: 2.5em
+    top: auto
+    bottom: 1em
+    margin: auto
+    right: 1.5em
+
+@media (min-width: 992px)
+  .carousel-control--right-lg.carousel-control-prev
+    right: 5em
+    left: auto
+
+.carousel-control--loop
+  &.carousel-control-prev span[class*="carousel-control"], &.carousel-control-next span[class*="carousel-control"]
+    width: 1.875em
+    height: 3.75em
+    box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.2)
+    color: black
+    opacity: 0.9
+    font-size: 1.625em
+    color: black
+
+  &.carousel-control-prev span[class*="carousel-control"]
+    left: 0
+    border-radius: 0 9.375em 9.375em 0
+
+  &.carousel-control-next span[class*="carousel-control"]
+    right: 0
+    border-radius: 9.375em 0 0 9.375em
+
+@media (min-width: 992px)
+  .carousel-control--loop
+    &.carousel-control-prev span[class*="carousel-control"], &.carousel-control-next span[class*="carousel-control"]
+      border-radius: 50%
+      width: 3.75em
+
+@media (min-width: 992px)
+  .carousel-control--loop.carousel-control-prev span[class*="carousel-control"]
+    border-radius: 50%
+
+@media (min-width: 992px)
+  .carousel-control--loop.carousel-control-next span[class*="carousel-control"]
+    border-radius: 50%
+
+@media (min-width: 992px)
+  .carousel-control.floating-out-left
+    left: -2%
+
+@media (min-width: 992px)
+  .carousel-control.floating-out-right
+    right: -2%
