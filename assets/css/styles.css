@@ -1,7 +1,7 @@
 /*Fonts*/
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/../font/SofiaPro-Bold.ttf') format('truetype');
+    src: url('../fonts/../fonts/SofiaPro-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-BlackItalic.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-BlackItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-Black.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-ExtraLightItalic.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-ExtraLightItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
     font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-Medium.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -41,7 +41,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-ExtraLight.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -49,7 +49,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-LightItalic.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -57,7 +57,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-Light.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -65,7 +65,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-BoldItalic.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -73,7 +73,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-SemiBoldItalic.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
     font-display: swap;
@@ -81,7 +81,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-UltraLightItalic.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-UltraLightItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
     font-display: swap;
@@ -89,7 +89,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-SemiBold.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -97,7 +97,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-UltraLight.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-UltraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -105,7 +105,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-MediumItalic.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -113,7 +113,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro-Italic.ttf') format('truetype');
+    src: url('../fonts/SofiaPro-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -121,7 +121,7 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../font/SofiaPro.ttf') format('truetype');
+    src: url('../fonts/SofiaPro.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
